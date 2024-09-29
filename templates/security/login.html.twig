@@ -1,6 +1,16 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Log in!{% endblock %}
+{% block content %}
+
+    <h1>Connexion</h1>
+
+    <ul>
+        <li><a href="{{ path('app_home') }}">Accueil</a></li>
+        <li><a href="{{ path('app_login') }}">Connexion</a></li>
+        <li><a href="{{ path('app_logout') }}">Déconnexion</a></li>
+    </ul>
+{% endblock %}
 
 {% block body %}
 <div class="container">
