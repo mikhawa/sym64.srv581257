@@ -56,6 +56,12 @@ https://github.com/SymfonyCasts/verify-email-bundle
 
 https://symfony.com/doc/current/security.html
 
+## Création de la page d'accueil
+
+    php bin/console make:controller HomeController
+
+and create `src/Controller/SecurityController.php`
+
 
 ## EasyAdmin
 
@@ -67,8 +73,10 @@ https://symfony.com/bundles/EasyAdminBundle/current/index.html
 
     php bin/console make:admin:dashboard
 
-## Création de la page d'accueil
+### Importation de chart.js
 
-    php bin/console make:controller HomeController
+    composer require symfony/ux-chartjs
 
-and create `src/Controller/SecurityController.php`
+
+
+
