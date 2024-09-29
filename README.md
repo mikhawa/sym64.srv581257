@@ -63,3 +63,8 @@ https://symfony.com/bundles/EasyAdminBundle/current/index.html
 
     composer require easycorp/easyadmin-bundle
 
+## Création de la page d'accueil
+
+    php bin/console make:controller HomeController
+
+and create `src/Controller/SecurityController.php`
