@@ -63,6 +63,10 @@ https://symfony.com/bundles/EasyAdminBundle/current/index.html
 
     composer require easycorp/easyadmin-bundle
 
+### Création du dashboard
+
+    php bin/console make:admin:dashboard
+
 ## Création de la page d'accueil
 
     php bin/console make:controller HomeController
