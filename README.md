@@ -58,3 +58,8 @@ https://symfony.com/doc/current/security.html
 
 
 ## EasyAdmin
+
+https://symfony.com/bundles/EasyAdminBundle/current/index.html
+
+    composer require easycorp/easyadmin-bundle
+
