@@ -77,6 +77,10 @@ https://symfony.com/bundles/EasyAdminBundle/current/index.html
 
     composer require symfony/ux-chartjs
 
+documentation :
+
+https://symfony.com/bundles/ux-chartjs/current/index.html
+
 
 
 
