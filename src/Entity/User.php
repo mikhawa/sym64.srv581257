@@ -48,6 +48,19 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(targetEntity: Comment::class, mappedBy: 'user')]
     private Collection $comments;
 
+    #[ORM\Column(length: 175)]
+    private ?string $UserMail = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $Uniquid = null;
+
+    #[ORM\Column(
+        options: [
+            'default' => false,
+        ]
+    )]
+    private ?bool $UserActive = null;
+
     public function __construct()
     {
         $this->posts = new ArrayCollection();
@@ -185,6 +198,42 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
                 $comment->setUser(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getUserMail(): ?string
+    {
+        return $this->UserMail;
+    }
+
+    public function setUserMail(string $UserMail): static
+    {
+        $this->UserMail = $UserMail;
+
+        return $this;
+    }
+
+    public function getUniquid(): ?string
+    {
+        return $this->Uniquid;
+    }
+
+    public function setUniquid(string $Uniquid): static
+    {
+        $this->Uniquid = $Uniquid;
+
+        return $this;
+    }
+
+    public function isUserActive(): ?bool
+    {
+        return $this->UserActive;
+    }
+
+    public function setUserActive(bool $UserActive): static
+    {
+        $this->UserActive = $UserActive;
 
         return $this;
     }

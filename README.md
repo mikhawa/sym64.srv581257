@@ -32,9 +32,29 @@ et
     php bin/console doctrine:migrations:migrate
     php bin/console d:m:m
 
-# Installation de mailjet-mailer
+## On va ajouter des champs dans la table `User` et `Post
+
+
+    php bin/console make:entity User
+
+
+## Installation de mailjet-mailer
 
     composer require symfony/mailjet-mailer
-    
+
+Voir la documentation : https://symfony.com/doc/current/mailer.html
+
+https://app.mailjet.com/
+
+## Installation de vérification de mail
+
+    composer require symfonycasts/verify-email-bundle
+
+Documentation :
+
+https://github.com/SymfonyCasts/verify-email-bundle
+
+https://symfony.com/doc/current/security.html
+
 
 ## EasyAdmin

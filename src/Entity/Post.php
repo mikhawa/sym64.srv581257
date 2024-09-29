@@ -43,7 +43,11 @@ class Post
         nullable: true)]
     private ?\DateTimeInterface $postDatePublished = null;
 
-    #[ORM\Column]
+    #[ORM\Column(
+        options: [
+            'default' => false,
+        ]
+    )]
     private ?bool $postPublished = null;
 
     /**
